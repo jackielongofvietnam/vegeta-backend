@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    image: khactuan2001/api.khactuan.site:latest
+    image: notadev123/vegeta:latest
     env_file:
       - .env
     restart: always
@@ -26,13 +26,6 @@ services:
       - ./init-data.sh:/docker-entrypoint-initdb.d/init-data.sh
     env_file:
       - .env
-
-  mailhog:
-    image: mailhog/mailhog
-    restart: always
-    ports:
-      - '1025:1025'
-      - '8025:8025'
 
   redis:
     image: redis

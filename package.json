@@ -1,7 +1,7 @@
 {
-  "name": "individual-backend",
+  "name": "vegeta-backend",
   "version": "1.0.0",
-  "description": "Individual Backend, Typescript, Postgres, TypeORM",
+  "description": "Vegeta Backend, Typescript, Postgres, TypeORM",
   "private": true,
   "license": "MIT",
   "main": ".eslintrc.js",
@@ -9,7 +9,7 @@
     "doc": "docs",
     "test": "test"
   },
-  "author": "Nguyen Khac Tuan",
+  "author": "Group 1",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "postbuild": "copyfiles --up 1 src/**/*.json dist",

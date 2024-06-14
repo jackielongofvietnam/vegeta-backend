@@ -1,4 +1,4 @@
-FROM node:18 AS node_modules
+FROM node:20 AS node_modules
 
 WORKDIR /app
 
