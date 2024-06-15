@@ -11,6 +11,10 @@ import { AuthModule } from './modules/auth/auth.module';
 import { UserModule } from './modules/user/user.module';
 import { HealthCheckerModule } from './modules/health/health.module';
 import { AdminModule } from './modules/admin/admin.module';
+import { OrderModule } from './modules/order/order.module';
+import { ProductModule } from './modules/product/product.module';
+import { PaymentModule } from './modules/payment/payment.module';
+import { DeliveryModule } from './modules/delivery/delivery.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -28,7 +32,11 @@ import { AdminModule } from './modules/admin/admin.module';
     AuthModule,
     UserModule,
     HealthCheckerModule,
-    AdminModule
+    AdminModule,
+    OrderModule,
+    ProductModule,
+    PaymentModule,
+    DeliveryModule
   ],
   controllers: [],
 })
