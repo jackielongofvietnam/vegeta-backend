@@ -10,6 +10,7 @@ import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { UserModule } from './modules/user/user.module';
 import { HealthCheckerModule } from './modules/health/health.module';
+import { AdminModule } from './modules/admin/admin.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -27,6 +28,7 @@ import { HealthCheckerModule } from './modules/health/health.module';
     AuthModule,
     UserModule,
     HealthCheckerModule,
+    AdminModule
   ],
   controllers: [],
 })
